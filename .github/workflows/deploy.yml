@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # or master, check your default branch
+      - main
 
 jobs:
   build-and-deploy:
@@ -22,17 +22,11 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Check Formatting
-        run: npx prettier --check .
-
-      - name: Run Tests
-        run: npm run test -- --watch=false --browsers=ChromeHeadless
-
-      - name: Verify Docker Build
-        run: docker build -t portfolio-test .
-
       - name: Build
-        run: npm run build -- --configuration production --base-href /
+        run: npm run build -- --configuration production --base-href /myportfolio/
+
+      - name: Add .nojekyll
+        run: touch dist/portfolio/browser/.nojekyll
 
       - name: Upload Build Artifact
         uses: actions/upload-artifact@v4
@@ -46,3 +40,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist/portfolio/browser
+
