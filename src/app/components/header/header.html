@@ -1,12 +1,23 @@
-<header class="navbar">
-    <div class="container">
-        <div class="logo">Ajeet<span>Yadav</span></div>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#experience">Experience</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact" class="btn-contact">Contact</a>
-        </nav>
-    </div>
+<header class="header-main" [class.scrolled]="isScrolled">
+    <nav class="navbar">
+        <div class="header-container">
+            <div class="logo">
+                <span class="logo-text">Ajeet<span class="accent">Yadav</span></span>
+            </div>
+            
+            <div class="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="btn-contact">Contact Me</a>
+            </div>
+
+            <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </nav>
 </header>
