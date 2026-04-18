@@ -1,0 +1,23 @@
+.contact-section {
+    padding: 8rem 2rem;
+    text-align: center;
+}
+
+.contact-card {
+    max-width: 600px;
+    margin: 0 auto;
+    background: var(--bg-card);
+    padding: 3rem;
+    border-radius: 20px;
+    border: 1px solid var(--glass-border);
+}
+
+.contact-card p {
+    margin-bottom: 2.5rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}

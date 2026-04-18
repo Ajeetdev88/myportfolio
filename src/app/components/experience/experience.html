@@ -1,0 +1,38 @@
+<section id="experience" class="exp-section">
+    <div class="split-container">
+        <div class="exp-column">
+            <div class="section-header-left">
+                <span class="sub">Career Path</span>
+                <h2>Experience & Training</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item" *ngFor="let exp of experiences">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="duration">{{ exp.duration }}</span>
+                        <h3>{{ exp.role }}</h3>
+                        <h4>{{ exp.company }}</h4>
+                        <p>{{ exp.description }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="edu-column">
+            <div class="section-header-left">
+                <span class="sub">Academic</span>
+                <h2>Education</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item" *ngFor="let edu of education">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="duration">{{ edu.year }}</span>
+                        <h3>{{ edu.degree }}</h3>
+                        <h4>{{ edu.institution }}</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

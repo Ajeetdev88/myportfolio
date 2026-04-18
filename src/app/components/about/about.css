@@ -1,0 +1,46 @@
+.about-section {
+    padding: 8rem 2rem;
+    text-align: center;
+}
+
+.section-header {
+    margin-bottom: 4rem;
+}
+
+.sub {
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    background: var(--bg-card);
+    padding: 3rem;
+    border-radius: 20px;
+    border: 1px solid var(--glass-border);
+}
+
+.about-text h3 {
+    color: #fff;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.lead {
+    font-size: 1.25rem;
+    color: var(--primary);
+    font-style: italic;
+    margin-bottom: 1.5rem;
+}
+
+.about-text p {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    line-height: 1.8;
+}

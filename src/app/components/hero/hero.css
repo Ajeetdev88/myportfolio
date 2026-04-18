@@ -1,0 +1,68 @@
+.hero-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.badge {
+    background: rgba(16, 185, 129, 0.1);
+    color: var(--primary);
+    padding: 0.5rem 1rem;
+    border-radius: 99px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    display: inline-block;
+    border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+h1 {
+    font-size: 4rem;
+    line-height: 1.1;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 1.5rem;
+}
+
+h1 span {
+    color: var(--primary);
+}
+
+p {
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+    margin-bottom: 3rem;
+}
+
+.hero-btns {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.btn-primary {
+    padding: 1rem 2rem;
+    background: var(--primary);
+    color: #fff !important;
+    border-radius: 12px;
+    font-weight: 700;
+}
+
+.btn-secondary {
+    padding: 1rem 2rem;
+    border: 1px solid var(--glass-border);
+    background: var(--glass);
+    color: #fff !important;
+    border-radius: 12px;
+    font-weight: 700;
+}
+
+.btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.05);
+}

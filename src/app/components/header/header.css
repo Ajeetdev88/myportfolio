@@ -1,0 +1,56 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1.5rem 2rem;
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #fff;
+}
+
+.logo span {
+    color: var(--primary);
+}
+
+nav {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+nav a {
+    font-weight: 500;
+    color: var(--text-secondary);
+}
+
+nav a:hover {
+    color: var(--primary);
+}
+
+.btn-contact {
+    padding: 0.6rem 1.2rem;
+    background: var(--primary);
+    color: #fff !important;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.btn-contact:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+}
